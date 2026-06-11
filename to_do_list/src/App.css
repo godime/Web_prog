@@ -3,25 +3,28 @@ body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #333;
 }
 
 #root {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center; 
+  padding: 20px 0;
+  box-sizing: border-box;
 }
 
 .glass-layout {
   display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  margin: 0 auto;
   gap: 20px;
   width: 90%;
   max-width: 1000px;
   flex-wrap: wrap;
-  padding: 20px 0;
 }
 
 .glass-panel, .glass-sidebar {
@@ -32,6 +35,7 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 30px;
+  box-sizing: border-box;
 }
 
 .main-panel {
@@ -195,8 +199,7 @@ body {
   .glass-layout {
     flex-direction: column;
   }
-  .glass-panel, .glass-sidebar {
+  .main-panel, .glass-sidebar {
     width: 100%;
-    box-sizing: border-box;
   }
 }
